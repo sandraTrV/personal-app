@@ -1,20 +1,42 @@
+import * as React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import moon from './moon.png';
 import sun from './sun.png';
+
+import PageTop from './PageTop';
+import PageContent from './PageContent';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 function App() {
   return (
     <div className="App">
-    
-      <header className="App-header">
-      <h2>AAAAAAAa</h2>
-        <img src={moon} className="App-logo" alt="logo" />
-        <img src={sun} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and sa zxcsxcsADve to reload.
-        </p>
+      <PageTop/>
+      <PageContent/>
+      {/* <div className='a'>
+      <div className='c'></div>
+      </div> */}
+      
+      {/* <header className="App-header"> */}
+      
+      {/* <Grid container spacing={2} >
+          
+          <Grid item xs={12} md={6}>
+          <h2>Gmail</h2>
+          </Grid>
 
-      </header>
+          <Grid item xs={12} md={6}>
+           <h2>LinkedIn</h2>
+          </Grid>
+      
+      </Grid> */}
+
+      
+        {/* <img src={moon} className="App-logo" alt="logo" />
+        <img src={sun} className="App-logo" alt="logo" /> */}
+        
+       
+      {/* </header> */}
     </div>
   );
 }

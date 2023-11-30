@@ -1,0 +1,128 @@
+.pg {
+    /* background-color: rgb(0, 42, 17); */
+    /* background-color: #004225; */
+    background-color: #010101;
+    /* background-color: #000417; */
+    min-height: 100vh;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    font-size: calc(10px + 2vmin);
+    color: white;
+    /* border-top: 25px solid #6e2929 !important;
+    border-radius: 200px !important; */
+}
+
+.description {
+    align-items: left;
+    margin: 3em;
+    padding: 1em;
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+        align-items: left;
+        margin: 2em;
+        padding: 1em;
+        display: flex;
+        /* flex-direction: column; */
+        width: 100%;
+    }
+}
+
+.aboutTxt {
+    text-align: left;
+    padding: 0.5em;
+    /* border: 3px solid #ffffff !important;
+    border-radius: 30px !important; */
+}
+
+.aa {
+    margin: 0.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.appImage {
+    /* display: flex; */
+    text-align: left;
+    height: 20vmin;
+    margin: 1em;
+    padding: auto;
+}
+
+.MuiButton-outlined {
+    border: 3px solid #ffffff !important;
+    border-radius: 10px 100px / 120px !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    /* box-shadow: 3px 3px 3px rgb(58, 68, 72); */
+    margin: 1em !important;
+}
+
+.MuiButton-outlined:hover {
+    background-color: #ffffff !important;
+    color: #004225 !important;
+}
+
+.pr {
+    /* border-left: 3px solid #ffffff !important; */
+    /* border-radius: 10px 100px / 120px !important; */
+    /* border-radius: 30px; */
+}
+
+.text {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.tech {
+    border-bottom: 3px solid #ffffff !important;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li.t {
+    align-self: left;
+    list-style: none;
+    display: inline;
+    padding: 0 0 0.3em;
+    margin-right: 1em;
+    font-size: 20px;
+    border-bottom: 3px solid #ffffff !important;
+}
+
+ul li.pp {
+    align-self: left;
+    list-style: none;
+    /* display: inline; */
+    padding: 0.5em;
+    /* margin-right: 1em; */
+    font-size: 20px;
+    margin: 1em;
+    border: 3px solid #ffffff !important;
+    border-radius: 15px;
+}
+
+ul li.pp:hover {
+    align-self: left;
+    list-style: none;
+    /* display: inline; */
+    padding: 0.5em;
+    /* margin-right: 1em; */
+    font-size: 20px;
+    margin: 1em;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    border: 3px solid #ffffff !important;
+    border-radius: 15px;
+}
