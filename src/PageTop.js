@@ -8,6 +8,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 // import MailOutlineIcon from '@mui/icons-material/MailOutline';
 function PageTop() {
+  const openEmail = () => {
+    window.location.href = 'mailto:sandra.tr265@gmail.com';
+  }
+  
   return (
     <div className="top">
           <div id="stars"></div>
@@ -43,7 +47,7 @@ function PageTop() {
           <div className='icons'>
             
             <LinkedInIcon  fontSize='large' style={{color:'#ffffff'}}></LinkedInIcon>
-            <MailOutlineIcon fontSize='large' style={{color:'#ffffff',  marginRight:'0.7em'}}></MailOutlineIcon>
+            <MailOutlineIcon onClick={openEmail} fontSize='large' style={{color:'#ffffff',  marginRight:'0.7em'}}></MailOutlineIcon>
           </div>
        </Grid>
       </Grid>
@@ -64,10 +68,10 @@ function PageTop() {
 
         <Grid className='myDescr' item xs={12} md={6}>
           <Box>
-            <h1>About me</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-            <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-          </Box>  
+            <h1>Hello!</h1>
+            <p>Hello! I'm a passionate Junior Front-End Web Developer with a knack for creating user-friendly, accessible websites. I have a solid understanding of HTML, CSS, and JavaScript, and I'm continually learning and adapting to new technologies and frameworks.</p>
+            <p> I have experience working with React.js and Bootstrap, and I'm comfortable using version control systems like Git. I'm always eager to take on new challenges and learn from others.</p>
+            </Box>  
         </Grid>
       
       </Grid>

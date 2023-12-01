@@ -1,0 +1,13 @@
+.textt {
+    margin: 0.8em 1em 0;
+    padding: 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-left: 4px solid #ffffff !important;
+    /* border-radius: 50px !important; */
+}
+
+.welcome {
+    margin: 0;
+}

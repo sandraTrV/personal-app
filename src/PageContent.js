@@ -1,44 +1,39 @@
 import './PageContent.css';
+import Projects from './Projects';
+import ProjectsGeneralInfo from './ProjectsGeneralInfo';
+import ProjectDescr from './ProjectDescr';
+
 import Box from '@mui/material/Box';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import sun from './front.jpg';
+import {useState} from 'react';
+import { dialogActionsClasses } from '@mui/material';
 
 function PageContent() {
+  const [projectIsShown, setProjectIsShown] = useState(true);
   return (
     <div className="pg">
+      
       <div className='description'>
-        <Grid container spacing={2} >
-
-          <Grid className='aboutTxt' item xs={12} sm={12} md={8}>
-            <h2 className='aa'>Project 1</h2>
-            <img src={sun} className="appImage" alt="logo" />
-            <div className='text'>
-              <p>The components implement keyboard navigation using the "manual activation" behavior. If you want to switch to the "selection automatically follows focus" behavior you have to pass</p>
-              <ul>
-                <li className='t'>JS</li>
-                <li className='t'>React</li>
-                <li className='t'>MUI</li>
-              </ul>
-            </div>
-            
-            <Button variant='outlined' size='large'>
-                VISIT
-            </Button>
-            <Button variant='outlined' size='large'>
-                CODE
-            </Button>
+        <Grid container spacing={5} >
+      
+          <Grid className='aboutTxt' item xs={12} sm={12} md={7} lg={8}> 
+            {projectIsShown && (
+              <div>
+                <ProjectDescr/>
+              </div>
+            ) || (  !projectIsShown  && (
+              <div>
+                <ProjectsGeneralInfo/>
+              </div>
+            )
+            )
+          }
           </Grid>
-          <Grid className='pr' item xs={12} sm={12} md={4}> 
-          <h2 className='aa'>Projects</h2>
-          <ul>
-            <li className='pp'>
-            Fridge Notes App
-            </li>
-            <li className='pp'>Quiz</li>
-            <li className='pp'>The Cat App</li>
-          </ul>
+          <Grid  item xs={12} sm={12} md={5} lg={4}>
+          <Projects/>
           </Grid>
         </Grid>
        
