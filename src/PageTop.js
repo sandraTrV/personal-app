@@ -15,6 +15,7 @@ function PageTop() {
   return (
     <div className="top">
           <div id="stars"></div>
+          {/* <div id="starss"></div> */}
          {/* <div id="stars"></div> */}
         {/* <img src={sun} className="App-logo" alt="logo" /> */}
         {/* <ul style={{display:'flex', listStyle:'none'}}>
@@ -69,8 +70,9 @@ function PageTop() {
         <Grid className='myDescr' item xs={12} md={6}>
           <Box>
             <h1>Hello!</h1>
-            <p>Hello! I'm a passionate Junior Front-End Web Developer with a knack for creating user-friendly, accessible websites. I have a solid understanding of HTML, CSS, and JavaScript, and I'm continually learning and adapting to new technologies and frameworks.</p>
+            <p>My name is ______ and I'm a passionate Junior Front-End Web Developer with a knack for creating user-friendly, accessible websites. I have a solid understanding of HTML, CSS, and JavaScript, and I'm continually learning and adapting to new technologies and frameworks.</p>
             <p> I have experience working with React.js and Bootstrap, and I'm comfortable using version control systems like Git. I'm always eager to take on new challenges and learn from others.</p>
+
             </Box>  
         </Grid>
       

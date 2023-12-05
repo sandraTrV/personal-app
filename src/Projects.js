@@ -1,19 +1,22 @@
 import './Projects.css';
 
-function Projects() {
-  const aaa = () => {
-    console.log('aaaaaaaaaaa');
+function Projects(props) {
+  const changeCurrentProject = (e) => {
+    console.log( e.target.id +  ' -------------+++++++++++++');
+    props.setCurrentPr(e.target.id);
+    // 88888*****
+    // localStorage.setItem('projectDisplayed', JSON.stringify(e.target.id));
   }
   return (
     <div className="projectsList">
       <h2 className='projectsText'>My projects</h2>
-      <a  className='projectName'>
+      <a id='0' onClick={changeCurrentProject}  className='projectName'>
         Fridge Notes App
       </a>
-      <a className='projectName'>
+      <a id='1' onClick={changeCurrentProject}  className='projectName'>
       Quiz
       </a>
-      <a onClick={aaa} className='projectName'>
+      <a id='2' onClick={changeCurrentProject} className='projectName'>
         The Cat App
       </a>
       {/* <ul>

@@ -51,6 +51,15 @@
     }
 }
 
+
+/* #starss {
+    margin: 1em;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    box-shadow: 355px 335px #fff;
+} */
+
 #stars {
     margin: 1em;
     width: 1px;
