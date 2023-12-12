@@ -9,8 +9,12 @@
     /* display: flex; */
     text-align: left;
     height: 20vmin;
-    margin: 1em;
+    margin: 1em 0.5em;
     padding: auto;
+}
+
+.zoom-on-hover:hover {
+    transform: scale(1.1);
 }
 
 .projectTitle {

@@ -11,6 +11,8 @@ import Grid from '@mui/material/Grid';
 
 import {useState, useEffect} from 'react';
 
+
+
 function App() {
   // used to know which project is currently displayed
   const [currentProject, setCurrentProject] = React.useState(0);

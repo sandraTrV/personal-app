@@ -4,6 +4,12 @@ import sun from './sun.png';
 import moon from './moon.png';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import quizImg from './quiz.PNG';
+import quizImg2 from './quiz2.PNG';
+import fridgeNotesImg from './fridge-notes.PNG';
+import fridgeNotesImg2 from './fridge-notes2.PNG';
+import catApp from './catApp.PNG';
+import catApp2 from './catApp2.PNG';
 
 import {useState, useEffect} from 'react';
 // import MuiImageSlider from 'mui-image-slider';
@@ -23,7 +29,7 @@ function ProjectDescr(props) {
   }
 
   const images = [
-    [im, sun, moon], [sun, moon, im], [moon, im, sun]
+    [fridgeNotesImg, fridgeNotesImg2, moon], [quizImg, quizImg2, im], [catApp, catApp2, sun]
   ];
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -51,9 +57,10 @@ function ProjectDescr(props) {
     <h2 id='projectName' className='projectTitle'>{props.p.projectName}</h2>
     {/* <Box className='ce'> */}
       {/* <KeyboardArrowLeftIcon onClick={moveToPrevImg} id='prev' className='prev' style={{color:'#ffffff'}}></KeyboardArrowLeftIcon> */}
-
-         <img src={images[props.p.projectNo][0]} id='appImage' className="appImage" alt="logo" /> 
-      
+          <Box >
+         <img src={images[props.p.projectNo][1]} id='appImage' className="appImage zoom-on-hover" alt="logo" /> 
+         <img src={images[props.p.projectNo][0]} id='appImage' className="appImage zoom-on-hover" alt="logo" />
+         </Box>
       {/* <KeyboardArrowRightIcon onClick={moveToNextImg} id='next' className='next' style={{color:'#ffffff'}}></KeyboardArrowRightIcon> */}
     {/* </Box> */}
     <div className='text'>

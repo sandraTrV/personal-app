@@ -51,6 +51,87 @@
     }
 }
 
+@media screen and (max-width: 520px) {
+    .techn {
+        position: initial;
+        color: rgb(255, 255, 156);
+    }
+    .smallScr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .t1,
+    .t2,
+    .t3,
+    .t4,
+    .t5,
+    .t6,
+    .t7 {
+        /* display: none; */
+        margin: 0.5em;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .techn {
+        position: relative;
+        color: rgb(255, 255, 156);
+        font-weight: bold !important;
+    }
+    /* .t1:hover,
+    .t2:hover,
+    .t3:hover,
+    .t4:hover,
+    .t5:hover,
+    .t6:hover,
+    .t7:hover {
+        color: rgb(255, 255, 109);
+        
+}
+*/
+    .t1 {
+        /* border-bottom: 2px solid rgb(255, 255, 255); */
+        /* border-radius: 20px; */
+        /* padding: 5px; */
+        position: absolute;
+        top: 1%;
+        right: 60%;
+    }
+    .t2 {
+        position: absolute;
+        top: 40%;
+        left: 7%;
+    }
+    .t3 {
+        position: absolute;
+        top: 20%;
+        right: 10%;
+    }
+    .t4 {
+        position: absolute;
+        bottom: 1%;
+        right: 27%;
+    }
+    .t5 {
+        position: absolute;
+        bottom: 30%;
+        right: 7%;
+    }
+    .t6 {
+        position: absolute;
+        bottom: 10%;
+        left: 20%;
+    }
+    .t7 {
+        position: absolute;
+        top: 5%;
+        right: 30%;
+    }
+}
+
 
 /* #starss {
     margin: 1em;

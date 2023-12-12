@@ -6,6 +6,8 @@ import Grid from '@mui/material/Grid';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
+
 // import MailOutlineIcon from '@mui/icons-material/MailOutline';
 function PageTop() {
   const openEmail = () => {
@@ -61,9 +63,17 @@ function PageTop() {
      
       <Grid className='topParts' container spacing={2} >
         <Grid item xs={12} md={6}>
-          <Box sx={{alignItems:'right'}}>
+          <Box className='techn' sx={{alignItems:'right'}}>
               <img src={moon} className="App-logo" alt="logo" />
-               
+              <Box className='smallScr'>
+               <h3 className='t1'>React.js</h3>
+               <h3 className='t2'>HTML</h3>
+               <h3 className='t3'>CSS</h3>
+               <h3 className='t4'>Bootstrap</h3>
+               <h3 className='t5'>jQuery</h3>
+               <h3 className='t6'>Git</h3>
+               <h3 className='t7'>JS</h3>
+               </Box>
           </Box>
         </Grid>
 
