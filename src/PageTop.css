@@ -19,6 +19,16 @@
     margin: 1em 1em 0;
 }
 
+.logo {
+    /* z-index: 2; */
+    margin: 0 1em 2em;
+    height: 13vmin;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
 .topParts {
     padding: 0.5em 2em 2em;
 }
@@ -35,9 +45,13 @@
     white-space: pre-wrap;
 }
 
+.myDescr h1 {
+    margin-top: 0.5em;
+}
+
 .icons {
     text-align: right;
-    margin: 1em 2em 2em 2em;
+    margin: 0 2em 2em 2em;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -45,7 +59,7 @@
 @media screen and (max-width: 360px) {
     .icons {
         text-align: right;
-        margin: 1em 1em 2em 2em;
+        margin: 0 1em 2em 2em;
         display: flex;
         flex-direction: row-reverse;
     }
@@ -67,7 +81,6 @@
     .t5,
     .t6,
     .t7 {
-        /* display: none; */
         margin: 0.5em;
         border: 2px solid rgb(255, 255, 255);
         border-radius: 15px;
@@ -81,21 +94,7 @@
         color: rgb(255, 255, 156);
         font-weight: bold !important;
     }
-    /* .t1:hover,
-    .t2:hover,
-    .t3:hover,
-    .t4:hover,
-    .t5:hover,
-    .t6:hover,
-    .t7:hover {
-        color: rgb(255, 255, 109);
-        
-}
-*/
     .t1 {
-        /* border-bottom: 2px solid rgb(255, 255, 255); */
-        /* border-radius: 20px; */
-        /* padding: 5px; */
         position: absolute;
         top: 1%;
         right: 60%;
@@ -142,6 +141,7 @@
 } */
 
 #stars {
+    /* z-index: 1; */
     margin: 1em;
     width: 1px;
     height: 1px;

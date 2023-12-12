@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-
+import appLogo from './appLogo.png';
 
 // import MailOutlineIcon from '@mui/icons-material/MailOutline';
 function PageTop() {
@@ -43,7 +43,8 @@ function PageTop() {
       
         <Grid item xs={4} md={4}>
           <Box sx={{textAlign: 'left'}}>
-            <AccountCircleIcon style={{color:'#fff373',  marginRight:'1em', fontSize: 80}}></AccountCircleIcon>
+          <img src={appLogo} className="logo" alt="logo" />
+            {/* <AccountCircleIcon style={{color:'#fff373',  marginRight:'1em', fontSize: 80}}></AccountCircleIcon> */}
           </Box>
         </Grid>
         <Grid item xs={8} md={8}>
@@ -79,7 +80,7 @@ function PageTop() {
 
         <Grid className='myDescr' item xs={12} md={6}>
           <Box>
-            <h1>Hello!</h1>
+            <h1>Welcome to this space of mine!</h1>
             <p>My name is ______ and I'm a passionate Junior Front-End Web Developer with a knack for creating user-friendly, accessible websites. I have a solid understanding of HTML, CSS, and JavaScript, and I'm continually learning and adapting to new technologies and frameworks.</p>
             <p> I have experience working with React.js and Bootstrap, and I'm comfortable using version control systems like Git. I'm always eager to take on new challenges and learn from others.</p>
 
