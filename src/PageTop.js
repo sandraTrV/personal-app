@@ -16,64 +16,34 @@ function PageTop() {
   
   return (
     <div className="top">
-          <div id="stars"></div>
-          {/* <div id="starss"></div> */}
-         {/* <div id="stars"></div> */}
-        {/* <img src={sun} className="App-logo" alt="logo" /> */}
-        {/* <ul style={{display:'flex', listStyle:'none'}}>
-          <li sx={{listStyle:'none'}}>aa</li>
-          <li sx={{listStyle:'none'}}>aaaa</li>
-        </ul> */}
-      {/* <Box >
-        
-        <Grid container spacing={2} >
-        
-          <Grid item xs={6} md={6}>
-          <h2>About</h2>
-          </Grid>
-          <Grid item xs={6} md={6}>
-          
-          
-          </Grid>
-
-        </Grid>
-      </Box> */}
-
+      <div id="stars"></div>
       <Grid container spacing={2} >
-      
         <Grid item xs={4} md={4}>
           <Box sx={{textAlign: 'left'}}>
           <img src={appLogo} className="logo" alt="logo" />
-            {/* <AccountCircleIcon style={{color:'#fff373',  marginRight:'1em', fontSize: 80}}></AccountCircleIcon> */}
           </Box>
         </Grid>
         <Grid item xs={8} md={8}>
           <div className='icons'>
-            
-            <LinkedInIcon  fontSize='large' style={{color:'#ffffff'}}></LinkedInIcon>
-            <MailOutlineIcon onClick={openEmail} fontSize='large' style={{color:'#ffffff',  marginRight:'0.7em'}}></MailOutlineIcon>
+            <LinkedInIcon style={{color:'#ffffff', fontSize: 50}}></LinkedInIcon>
+            <MailOutlineIcon onClick={openEmail} style={{color:'#ffffff',  marginRight:'0.7em', fontSize: 50}}></MailOutlineIcon>
           </div>
        </Grid>
       </Grid>
 
-      {/* <Box sx={{textAlign: 'left', margin: '0 1em 0'}}>
-      <AccountCircleIcon fontSize='large' style={{color:'#ffffff',  marginRight:'1em'}}></AccountCircleIcon>
-        
-      </Box> */}
-
-     
       <Grid className='topParts' container spacing={2} >
         <Grid item xs={12} md={6}>
           <Box className='techn' sx={{alignItems:'right'}}>
               <img src={moon} className="App-logo" alt="logo" />
               <Box className='smallScr'>
-               <h3 className='t1'>React.js</h3>
-               <h3 className='t2'>HTML</h3>
-               <h3 className='t3'>CSS</h3>
-               <h3 className='t4'>Bootstrap</h3>
-               <h3 className='t5'>jQuery</h3>
-               <h3 className='t6'>Git</h3>
+               <h3 className='t2'>React.js</h3>
+               <h3 className='t3'>HTML</h3>
+               <h3 className='t8'>CSS</h3>
+               <h3 className='t6'>Bootstrap</h3>
+               <h3 className='t1'>jQuery</h3>
+               <h3 className='t5'>Git</h3>
                <h3 className='t7'>JS</h3>
+               <h3 className='t4'>Material UI</h3>
                </Box>
           </Box>
         </Grid>
@@ -86,14 +56,7 @@ function PageTop() {
 
             </Box>  
         </Grid>
-      
       </Grid>
-
-      {/* <Box sx={{alignItems:'right'}}>
-        <img src={moon} className="App-logo" alt="logo" />
-      </Box> */}
-      {/* <h3>aaaaaaa</h3> */}
-      
     </div>
   );
 }

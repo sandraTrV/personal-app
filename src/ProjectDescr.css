@@ -14,7 +14,7 @@
 }
 
 .zoom-on-hover:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .projectTitle {
@@ -27,20 +27,6 @@
     line-height: 150% !important;
 }
 
-ul {
-    padding: 0;
-}
-
-ul li.t {
-    align-self: left;
-    list-style: none;
-    display: inline;
-    padding: 0 0 0.3em;
-    margin-right: 1em;
-    font-size: 20px;
-    border-bottom: 3px solid #ffffff !important;
-}
-
 .MuiButton-text.toolsName {
     text-transform: none;
     border-radius: 0%;
@@ -50,26 +36,4 @@ ul li.t {
     /* font-weight: bold !important; */
     /* box-shadow: 3px 3px 3px rgb(58, 68, 72); */
     margin: 1em 1.5em 1em 0 !important;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    /* position: absolute; */
-    top: 50%;
-    width: auto;
-    padding: 0;
-    color: white;
-    font-size: 60px !important;
-    /* transition: 0.6s ease; */
-    /* border-radius: 0 3px 3px 0;
-    user-select: none; */
-}
-
-.ce {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding: 0;
-    margin: 0;
 }

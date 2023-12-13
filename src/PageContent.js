@@ -1,19 +1,10 @@
 import './PageContent.css';
 import Projects from './Projects';
-import ProjectsGeneralInfo from './ProjectsGeneralInfo';
 import ProjectDescr from './ProjectDescr';
-
-import Box from '@mui/material/Box';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
-import sun from './front.jpg';
 import {useState} from 'react';
-import { dialogActionsClasses } from '@mui/material';
-import Grow from '@mui/material/Grow';
-// import {useEffect} from 'react';
+
 function PageContent() {
-  const [projectIsShown, setProjectIsShown] = useState(true);
   const [project, setProject] = useState(0);
   const appsList = [
     { 
@@ -50,67 +41,23 @@ function PageContent() {
       
     }
   ]
-    // ***************************
-    // useEffect(() => {
-    //   // setCurrentProject(Number(props.p));
-    //   // document.getElementById('projectDescription').innerHTML = appsList[currentProject].projectDescription;
-    //   const projectDesplayed = JSON.parse(localStorage.getItem('projectDisplayed'));
-    //   if (projectDesplayed) {
-    //     // console.log('user notes found');
-    //     setProject(Number(projectDesplayed));
-    //     console.log(project);
-    //     // document.getElementById('projectDescription').innerHTML = appsList[currentProject].projectDescription;
-    //   } 
-      
-    // }, []);
-
-  // here use state
-  
 
   const changeCurrentProjectHere = (projectNr) => {
     setProject(projectNr);
   }
-  // const dosth =() => {
-  //   const projectDesplayed = JSON.parse(localStorage.getItem('projectDisplayed'));
-  //     if (projectDesplayed) {
-  //       // console.log('user notes found');
-  //       // setProject(Number(projectDesplayed));
-  //       console.log(projectDesplayed + 'acum' + appsList[projectDesplayed].projectDescription);
-  //       // document.getElementById('projectDescription').innerHTML = appsList[currentProject].projectDescription;
-  //     } 
-  // }
+  
   return (
     <div className="pg">
       <div className='description'>
         <Grid container spacing={5} >
-      
           <Grid className='aboutTxt' item xs={12} sm={12} md={12} lg={8}> 
-            {projectIsShown && (
-              <div>
-              {/* <Grow
-                in={true}
-                style={{ transformOrigin: '0 0 0' }}
-                {...(true ? { timeout: 1000 } : {})}
-  > */}
-                <ProjectDescr p={appsList[project]}/>
-                {/* </Grow> */}
-              </div>
-            ) || (  !projectIsShown  && (
-              <div> 
-                <ProjectsGeneralInfo/>
-              </div>
-            )
-            )
-          }
+            <ProjectDescr p={appsList[project]}/>
           </Grid>
           <Grid  item xs={12} sm={12} md={12} lg={4}>
-          
-          <Projects setCurrentPr={changeCurrentProjectHere}/>
-          
+            <Projects setCurrentPr={changeCurrentProjectHere}/>
           </Grid>
-        </Grid>
-       
-    </div>
+        </Grid>  
+      </div>
     </div>
   );
 }

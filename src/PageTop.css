@@ -52,6 +52,7 @@
 .icons {
     text-align: right;
     margin: 0 2em 2em 2em;
+    padding: 0;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -80,7 +81,8 @@
     .t4,
     .t5,
     .t6,
-    .t7 {
+    .t7,
+    .t8 {
         margin: 0.5em;
         border: 2px solid rgb(255, 255, 255);
         border-radius: 15px;
@@ -88,7 +90,12 @@
     }
 }
 
-@media screen and (min-width: 520px) {
+@media screen and ((min-width: 700px) and (max-width: 900px)) {
+    .t4 {
+        position: absolute;
+        bottom: 1%;
+        right: 40%;
+    }
     .techn {
         position: relative;
         color: rgb(255, 255, 156);
@@ -96,18 +103,129 @@
     }
     .t1 {
         position: absolute;
-        top: 1%;
-        right: 60%;
+        top: 10%;
+        right: 70%;
     }
     .t2 {
         position: absolute;
         top: 40%;
-        left: 7%;
+        left: 5%;
     }
     .t3 {
         position: absolute;
-        top: 20%;
-        right: 10%;
+        top: 30%;
+        right: 8%;
+    }
+    .t5 {
+        position: absolute;
+        bottom: 20%;
+        right: 15%;
+    }
+    .t6 {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+    }
+    .t7 {
+        position: absolute;
+        top: 8%;
+        right: 25%;
+    }
+    .t8 {
+        position: absolute;
+        top: 1%;
+        left: 45%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .techn {
+        position: relative;
+        color: rgb(255, 255, 156);
+        font-weight: bold !important;
+    }
+    .t1 {
+        position: absolute;
+        top: 10%;
+        right: 70%;
+    }
+    .t2 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+    .t3 {
+        position: absolute;
+        top: 30%;
+        right: 8%;
+    }
+    .t4 {
+        position: absolute;
+        bottom: 1%;
+        right: 30%;
+    }
+    .t5 {
+        position: absolute;
+        bottom: 20%;
+        right: 15%;
+    }
+    /* here */
+    .t6 {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+    }
+    .t7 {
+        position: absolute;
+        top: 8%;
+        right: 25%;
+    }
+    .t8 {
+        position: absolute;
+        top: 1%;
+        left: 45%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .t4 {
+        position: absolute;
+        bottom: 1%;
+        right: 40%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .t6 {
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+    }
+}
+
+
+/* for when they are around the image */
+
+@media screen and ((min-width: 520px) and (max-width: 700px)) {
+    .techn {
+        position: relative;
+        color: rgb(255, 255, 156);
+        font-weight: bold !important;
+    }
+    .t1 {
+        position: absolute;
+        top: 10%;
+        right: 70%;
+    }
+    .t2 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+    .t3 {
+        position: absolute;
+        top: 30%;
+        right: 8%;
     }
     .t4 {
         position: absolute;
@@ -116,18 +234,23 @@
     }
     .t5 {
         position: absolute;
-        bottom: 30%;
-        right: 7%;
+        bottom: 20%;
+        right: 15%;
     }
     .t6 {
         position: absolute;
         bottom: 10%;
-        left: 20%;
+        left: 10%;
     }
     .t7 {
         position: absolute;
-        top: 5%;
-        right: 30%;
+        top: 8%;
+        right: 25%;
+    }
+    .t8 {
+        position: absolute;
+        top: 1%;
+        left: 45%;
     }
 }
 
