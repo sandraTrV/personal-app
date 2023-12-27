@@ -49,6 +49,14 @@
     margin-top: 0.5em;
 }
 
+.myDescr p {
+    line-height: 1.5;
+}
+
+.myDescr h3 {
+    line-height: 1.5;
+}
+
 .icons {
     text-align: right;
     margin: 0 2em 2em 2em;

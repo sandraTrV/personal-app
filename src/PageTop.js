@@ -51,9 +51,9 @@ function PageTop() {
         <Grid className='myDescr' item xs={12} md={6}>
           <Box>
             <h1>Welcome to this space of mine!</h1>
-            <p>My name is ______ and I'm a passionate Junior Front-End Web Developer with a knack for creating user-friendly, accessible websites. I have a solid understanding of HTML, CSS, and JavaScript, and I'm continually learning and adapting to new technologies and frameworks.</p>
-            <p> I have experience working with React.js and Bootstrap, and I'm comfortable using version control systems like Git. I'm always eager to take on new challenges and learn from others.</p>
-
+            <h3>My name is Sandra and I am deeply interested in front-end web development!</h3>
+            <p>I have a Bachelor of Computer Science Degree and I find great satisfaction in writing clean and organized code that results in user-friendly, responsive and eye-catching web applications.</p>
+            <p>I have a solid understanding of HTML, CSS, Javascript and Bootstrap and I'm comfortable using libraries as jQuery and React. I put my passion in some carefully crafted projects. Here you can read about them and also get to know where to find them.</p>
             </Box>  
         </Grid>
       </Grid>

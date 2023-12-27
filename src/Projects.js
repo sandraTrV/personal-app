@@ -12,10 +12,10 @@ function Projects(props) {
         Fridge Notes App
       </a>
       <a id='1' onClick={changeCurrentProject}  className='projectName'>
-      Quiz
+      Quiz App
       </a>
       <a id='2' onClick={changeCurrentProject} className='projectName'>
-        The Cat App
+        The CatSite
       </a>
 
     </div>

@@ -7,6 +7,7 @@ import fridgeNotesImg from './fridge-notes.PNG';
 import fridgeNotesImg2 from './fridge-notes2.PNG';
 import catApp from './catApp.PNG';
 import catApp2 from './catApp2.PNG';
+import ToolName from './ToolName';
 
 function ProjectDescr(props) {
   const openSite = () => {
@@ -24,7 +25,7 @@ function ProjectDescr(props) {
   return ( 
     <div>
       <h2 id='projectName' className='projectTitle'>{props.p.projectName}</h2>
-      <Box >
+      <Box>
         <img src={images[props.p.projectNo][1]} id='appImage' className="appImage zoom-on-hover" alt="logo" /> 
         <img src={images[props.p.projectNo][0]} id='appImage' className="appImage zoom-on-hover" alt="logo" />
       </Box>
@@ -32,10 +33,15 @@ function ProjectDescr(props) {
       <div className='text'>
         <p className='ddd' id='projectDescription'>{props.p.projectDescription} </p>
         <Box  sx={{display: 'flex', flexWrap: 'wrap', padding: '0', marginLeft: '0', textAlign:'left'}}>
-          <Button  variant='text' className='toolsName'>{props.p.projectToolsList[0]}</Button>  
+          
+          {props.p.projectToolsList.map((name) => (
+            <ToolName key={props.p.projectToolsList.indexOf(name)} name={name}/>
+                
+            ))}
+          {/* <Button  variant='text' className='toolsName'>{props.p.projectToolsList[0]}</Button>  
           <Button variant='text' className='toolsName'>{props.p.projectToolsList[1]}</Button> 
           <Button variant='text' className='toolsName'>{props.p.projectToolsList[2]}</Button>  
-          <Button variant='text' className='toolsName'>{props.p.projectToolsList[3]}</Button>
+          <Button variant='text' className='toolsName'>{props.p.projectToolsList[3]}</Button> */}
         </Box>
       </div>
     
