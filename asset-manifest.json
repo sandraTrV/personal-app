@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-app/static/css/main.f634703f.css",
-    "main.js": "/personal-app/static/js/main.6ae088a7.js",
+    "main.css": "/personal-app/static/css/main.5312cd92.css",
+    "main.js": "/personal-app/static/js/main.f6fb5f5e.js",
     "static/js/787.000b8695.chunk.js": "/personal-app/static/js/787.000b8695.chunk.js",
     "static/media/moon.png": "/personal-app/static/media/moon.9fa68006ff3d21fda530.png",
     "static/media/sun.png": "/personal-app/static/media/sun.c5eed095cd7d1df6d416.png",
@@ -13,12 +13,12 @@
     "static/media/quiz2.PNG": "/personal-app/static/media/quiz2.dff911cbf8040ec59815.PNG",
     "static/media/quiz.PNG": "/personal-app/static/media/quiz.4c14812a7b2edb3b43b6.PNG",
     "index.html": "/personal-app/index.html",
-    "main.f634703f.css.map": "/personal-app/static/css/main.f634703f.css.map",
-    "main.6ae088a7.js.map": "/personal-app/static/js/main.6ae088a7.js.map",
+    "main.5312cd92.css.map": "/personal-app/static/css/main.5312cd92.css.map",
+    "main.f6fb5f5e.js.map": "/personal-app/static/js/main.f6fb5f5e.js.map",
     "787.000b8695.chunk.js.map": "/personal-app/static/js/787.000b8695.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f634703f.css",
-    "static/js/main.6ae088a7.js"
+    "static/css/main.5312cd92.css",
+    "static/js/main.f6fb5f5e.js"
   ]
 }
