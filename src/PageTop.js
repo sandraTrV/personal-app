@@ -11,9 +11,11 @@ import appLogo from './appLogo.png';
 // import MailOutlineIcon from '@mui/icons-material/MailOutline';
 function PageTop() {
   const openEmail = () => {
-    window.location.href = 'mailto:sandra.tr265@gmail.com';
+    window.location.href = 'mailto:sandratripa.v@gmail.com';
   }
-  
+  const openLIn = () => {
+    window.open('https://www.linkedin.com/in/sandra-tripa-5b5a7b2a8/', '_blank');
+  }
   return (
     <div className="top">
       <div id="stars"></div>
@@ -25,7 +27,7 @@ function PageTop() {
         </Grid>
         <Grid item xs={8} md={8}>
           <div className='icons'>
-            <LinkedInIcon style={{color:'#ffffff', fontSize: 50}}></LinkedInIcon>
+            <LinkedInIcon onClick={openLIn} style={{color:'#ffffff', fontSize: 50}}></LinkedInIcon>
             <MailOutlineIcon onClick={openEmail} style={{color:'#ffffff',  marginRight:'0.7em', fontSize: 50}}></MailOutlineIcon>
           </div>
        </Grid>
@@ -53,7 +55,7 @@ function PageTop() {
             <h1>Welcome to this space of mine!</h1>
             <h3>My name is Sandra and I am deeply interested in front-end web development!</h3>
             <p>I have a Bachelor of Computer Science Degree and I find great satisfaction in writing clean and organized code that results in user-friendly, responsive and eye-catching web applications.</p>
-            <p>I have a solid understanding of HTML, CSS, Javascript and Bootstrap and I'm comfortable using libraries as jQuery and React. I put my passion in some carefully crafted projects. Here you can read about them and also get to know where to find them.</p>
+            <p>I have a solid understanding of HTML, CSS, Javascript and Bootstrap and I'm comfortable using libraries as jQuery and React. I put my passion in some carefully crafted projects. Here you can read about and access them.</p>
             </Box>  
         </Grid>
       </Grid>
