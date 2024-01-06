@@ -14,7 +14,7 @@ function PageTop() {
     window.location.href = 'mailto:sandratripa.v@gmail.com';
   }
   const openLIn = () => {
-    window.open('https://www.linkedin.com/in/sandra-tripa-5b5a7b2a8/', '_blank');
+    window.open('https://www.linkedin.com/in/sandra-tripa-v/', '_blank');
   }
   return (
     <div className="top">
